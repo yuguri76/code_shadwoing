@@ -11,6 +11,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+//2회차
 @Service
 @RequiredArgsConstructor
 @Transactional(readOnly = true)

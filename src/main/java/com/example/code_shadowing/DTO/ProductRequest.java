@@ -6,6 +6,7 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import jakarta.validation.constraints.NotNull;
 
+//2회차
 @Getter
 @NoArgsConstructor
 public class ProductRequest {

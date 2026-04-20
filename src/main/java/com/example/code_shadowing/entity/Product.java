@@ -5,6 +5,7 @@ import lombok.AccessLevel;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
+//2회차
 @Entity
 @Getter
 @Table(name = "products")

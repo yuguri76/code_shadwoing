@@ -4,6 +4,7 @@ package com.example.code_shadowing.DTO;
 import com.example.code_shadowing.entity.Product;
 import lombok.Getter;
 
+//2회차
 @Getter
 public class ProductResponse {
 
