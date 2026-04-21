@@ -1,9 +1,8 @@
-package com.example.code_shadowing.Controller;
+package com.example.code_shadowing.controller;
 
-
-import com.example.code_shadowing.DTO.ProductRequest;
-import com.example.code_shadowing.DTO.ProductResponse;
-import com.example.code_shadowing.Service.ProductService;
+import com.example.code_shadowing.dto.ProductRequest;
+import com.example.code_shadowing.dto.ProductResponse;
+import com.example.code_shadowing.service.ProductService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
@@ -12,7 +11,7 @@ import org.springframework.web.bind.annotation.*;
 import java.net.URI;
 import java.util.List;
 
-//2회차
+//3회차
 @RestController
 @RequestMapping("/api/products")
 @RequiredArgsConstructor
@@ -38,11 +37,8 @@ public class ProductController {
 
     @PutMapping("/{id}")
     public ResponseEntity<ProductResponse> updateProduct(
-            @PathVariable
-            Long id,
-            @Valid
-            @RequestBody
-            ProductRequest request
+        @PathVariable Long id,
+        @Valid @RequestBody ProductRequest request
     ) {
         return ResponseEntity.ok(productService.updateProduct(id, request));
     }

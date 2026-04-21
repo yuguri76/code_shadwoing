@@ -1,9 +1,9 @@
-package com.example.code_shadowing.Service;
+package com.example.code_shadowing.service;
 
 
-import com.example.code_shadowing.DTO.ProductRequest;
-import com.example.code_shadowing.DTO.ProductResponse;
-import com.example.code_shadowing.Repository.ProductRepository;
+import com.example.code_shadowing.dto.ProductRequest;
+import com.example.code_shadowing.dto.ProductResponse;
+import com.example.code_shadowing.repository.ProductRepository;
 import com.example.code_shadowing.entity.Product;
 import org.springframework.transaction.annotation.Transactional;
 import lombok.RequiredArgsConstructor;
@@ -11,7 +11,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 
-//2회차
+//3회차
 @Service
 @RequiredArgsConstructor
 @Transactional(readOnly = true)
